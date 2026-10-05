@@ -1,0 +1,110 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-floating: rgba(255, 255, 255, 0.88);
+  
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-dim: #cbd5e1;
+  
+  --border-subtle: rgba(15, 23, 42, 0.06);
+  --border-medium: rgba(15, 23, 42, 0.12);
+  --border-dark: rgba(15, 23, 42, 0.85);
+
+  --accent-black: #0f172a;
+  --accent-gray: #f1f5f9;
+  --accent-hover: #e2e8f0;
+  
+  --color-pass: #ef4444;
+  --color-pass-bg: rgba(239, 68, 68, 0.08);
+  --color-pass-border: rgba(239, 68, 68, 0.2);
+
+  --color-save: #10b981;
+  --color-save-bg: rgba(16, 185, 129, 0.08);
+  --color-save-border: rgba(16, 185, 129, 0.2);
+
+  --color-flip: #6366f1;
+  --color-flip-bg: rgba(99, 102, 241, 0.08);
+  --color-flip-border: rgba(99, 102, 241, 0.2);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 14px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 16px 36px -6px rgba(0, 0, 0, 0.07), 0 6px 14px -2px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 24px 50px -12px rgba(15, 23, 42, 0.08), 0 8px 20px -4px rgba(15, 23, 42, 0.04);
+  --shadow-card-active: 0 32px 64px -14px rgba(15, 23, 42, 0.14), 0 12px 28px -6px rgba(15, 23, 42, 0.06);
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', Consolas, monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+body {
+  background-image: 
+    radial-gradient(circle at 50% 0%, #ffffff 0%, #fafbfc 60%, #f4f6fa 100%),
+    radial-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px;
+  background-attachment: fixed;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+::selection {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* Custom scrollbar for modern white theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
